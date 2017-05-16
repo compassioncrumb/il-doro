@@ -11,6 +11,7 @@ function getEndTime(timerDuration) {
   var endTime = Date.parse(new Date()) + timerDuration;
   return endTime; 
 }
+
 var timeObject;
 $(".start").on('click', function () {
   clockMechanism();
@@ -69,6 +70,7 @@ function clockMechanism(timer) {
        $(".start").removeClass("hide");
        $(".t-box").css("background-color", "purple");
        $(".circle").css("margin-top", "0px");
+       $(".circle-text").text("-");
        timeObject = {};
     });                           
    },1000);
